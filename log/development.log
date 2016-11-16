@@ -529,3 +529,153 @@ Processing by Devise::RegistrationsController#new as HTML
   Rendered devise/registrations/new.html.erb within layouts/application (163.1ms)
   Rendered layouts/_navigation_links.html.erb (0.0ms)
 Completed 200 OK in 207ms (Views: 198.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-16 15:35:57 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (2.5ms)
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (File to import not found or unreadable: foundation.
+Load paths:
+  C:/Users/Nathan/cs198/fa16-proj2/app/assets/images
+  C:/Users/Nathan/cs198/fa16-proj2/app/assets/javascripts
+  C:/Users/Nathan/cs198/fa16-proj2/app/assets/stylesheets
+  C:/Users/Nathan/cs198/fa16-proj2/vendor/assets/javascripts
+  C:/Users/Nathan/cs198/fa16-proj2/vendor/assets/stylesheets
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts):
+     5: </header>
+     6: <head>
+     7:   <title>Fa16Proj2</title>
+     8:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+     9:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:   <%= csrf_meta_tags %>
+    11: </head>
+  app/assets/stylesheets/framework_and_overrides.css.scss:2
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__853180107_86538276'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.6ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (32.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (70.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-16 15:38:57 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navigation_links.html.erb (6.0ms)
+  Rendered layouts/_navigation.html.erb (8.0ms)
+Completed 500 Internal Server Error in 282ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (File to import not found or unreadable: foundation.
+Load paths:
+  C:/Users/Nathan/cs198/fa16-proj2/app/assets/images
+  C:/Users/Nathan/cs198/fa16-proj2/app/assets/javascripts
+  C:/Users/Nathan/cs198/fa16-proj2/app/assets/stylesheets
+  C:/Users/Nathan/cs198/fa16-proj2/vendor/assets/javascripts
+  C:/Users/Nathan/cs198/fa16-proj2/vendor/assets/stylesheets
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/jquery-rails-4.2.1/vendor/assets/javascripts
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/coffee-rails-4.1.1/lib/assets/javascripts
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/turbolinks-source-5.0.0/lib/assets/javascripts
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.7/assets/stylesheets
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.7/assets/javascripts
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.7/assets/fonts
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.7/assets/images
+  C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.7/assets/stylesheets):
+     5: </header>
+     6: <head>
+     7:   <title>Fa16Proj2</title>
+     8:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+     9:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:   <%= csrf_meta_tags %>
+    11: </head>
+  app/assets/stylesheets/framework_and_overrides.css.scss:2
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__532443522_59599068'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.2ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (85.9ms)
+
+
+Started GET "/" for ::1 at 2016-11-16 15:42:28 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navigation_links.html.erb (5.0ms)
+  Rendered layouts/_navigation.html.erb (25.7ms)
+Completed 200 OK in 14625ms (Views: 14604.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-16 15:42:43 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (2.5ms)
+Completed 200 OK in 118ms (Views: 116.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-16 15:42:43 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (2.0ms)
+Completed 200 OK in 117ms (Views: 116.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-16 15:42:43 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (2.5ms)
+Completed 200 OK in 116ms (Views: 115.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/framework_and_overrides.self-3af99f9671d4914443e2a62c130d782f58f7833df6479ac4d8b5ce2d12a833ba.css?body=1" for ::1 at 2016-11-16 15:42:43 -0800
+
+
+Started GET "/assets/application.self-d885a0a66bd595c10edb24f8879f94e334d88be0730c4d7c7a7b57c731c09037.css?body=1" for ::1 at 2016-11-16 15:42:43 -0800
+
+
+Started GET "/assets/foundation.self-43da31deda1ddb337d1f1b22131c222677369c6b805de8b35f7270675797a30f.css?body=1" for ::1 at 2016-11-16 15:42:43 -0800
+
+
+Started GET "/assets/foundation/foundation.self-31cdd3d6178b7cc7c9593314e8173d33c6d4ccb6c4a164578729472beb16f1fe.js?body=1" for ::1 at 2016-11-16 15:42:43 -0800
+
+
+Started GET "/assets/foundation/foundation.abide.self-fdefdb841d2b0b698445f082922317692186bc5edaf69c81c5e8eff2d95805d9.js?body=1" for ::1 at 2016-11-16 15:42:43 -0800
+
+
+Started GET "/assets/foundation/foundation.accordion.self-4a5afea6b32e59d806b8173c7dd28bb2a29f41566edc9fd7bc16d92520f30e09.js?body=1" for ::1 at 2016-11-16 15:42:43 -0800
+
+
+Started GET "/assets/foundation/foundation.alert.self-48c28bae9bad965a8c8823b9eeb735b8a3b83b6010e0fd61aa13d90a61966d44.js?body=1" for ::1 at 2016-11-16 15:42:43 -0800
+
+
+Started GET "/assets/foundation/foundation.clearing.self-5b79fac518ba78294e19dc19544978b5cec203045c6d76bca13c710c1716bdf7.js?body=1" for ::1 at 2016-11-16 15:42:43 -0800
+
+
+Started GET "/assets/foundation/foundation.dropdown.self-f4f674f1a10236e666ebc56ae099fef2f9590c0f7aac884e4366b12165bdfdcd.js?body=1" for ::1 at 2016-11-16 15:42:44 -0800
