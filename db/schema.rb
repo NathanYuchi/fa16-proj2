@@ -11,7 +11,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161116231404) do
+ActiveRecord::Schema.define(version: 20161117004736) do
+
+  create_table "courses", force: :cascade do |t|
+    t.string   "coursenum"
+    t.string   "department"
+    t.boolean  "breadth1"
+    t.boolean  "breadth2"
+    t.boolean  "breadth3"
+    t.boolean  "breadth4"
+    t.boolean  "breadth5"
+    t.boolean  "breadth6"
+    t.boolean  "breadth7"
+    t.boolean  "r1a"
+    t.boolean  "r1b"
+    t.boolean  "ewriting"
+    t.boolean  "aculture"
+    t.boolean  "ahistory"
+    t.boolean  "qreasoning"
+    t.boolean  "flanguage"
+    t.integer  "units"
+    t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "schedules", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "students", force: :cascade do |t|
     t.string   "name"
@@ -33,6 +62,7 @@ ActiveRecord::Schema.define(version: 20161116231404) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.string   "major"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

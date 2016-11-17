@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  coursenum: MyString
+  department: MyString
+  breadth1: false
+  breadth2: false
+  breadth3: false
+  breadth4: false
+  breadth5: false
+  breadth6: false
+  breadth7: false
+  r1a: false
+  r1b: false
+  ewriting: false
+  aculture: false
+  ahistory: false
+  qreasoning: false
+  flanguage: false
+  units: 1
+  title: MyString
+
+two:
+  coursenum: MyString
+  department: MyString
+  breadth1: false
+  breadth2: false
+  breadth3: false
+  breadth4: false
+  breadth5: false
+  breadth6: false
+  breadth7: false
+  r1a: false
+  r1b: false
+  ewriting: false
+  aculture: false
+  ahistory: false
+  qreasoning: false
+  flanguage: false
+  units: 1
+  title: MyString
