@@ -1,15 +1,15 @@
 // import the CSS framework
 @import "foundation";
 
-// override for the 'Home' navigation link
+// override for the 'Home' navigation links
+
 .top-bar .name {
-  font-size: rem-calc(13);
-  line-height: 45px; }
+  font-size: rem-calc(50);
+  line-height: 45px;}
 .top-bar .name a {
   font-weight: normal;
   color: white;
-  padding: 0 15px; }
-
+  padding: 0 25px; }
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create mixins using Foundation classes
 @mixin twelve-columns {
