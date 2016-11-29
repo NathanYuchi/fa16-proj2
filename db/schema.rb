@@ -11,18 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161117004736) do
+ActiveRecord::Schema.define(version: 20161129042719) do
 
   create_table "courses", force: :cascade do |t|
-    t.string   "coursenum"
-    t.string   "department"
-    t.boolean  "breadth1"
-    t.boolean  "breadth2"
-    t.boolean  "breadth3"
-    t.boolean  "breadth4"
-    t.boolean  "breadth5"
-    t.boolean  "breadth6"
-    t.boolean  "breadth7"
+    t.string   "title"
+    t.integer  "units"
+    t.string   "div"
+    t.boolean  "arts"
+    t.boolean  "bio"
+    t.boolean  "histor"
+    t.boolean  "intern"
+    t.boolean  "philo"
+    t.boolean  "physical"
+    t.boolean  "social"
     t.boolean  "r1a"
     t.boolean  "r1b"
     t.boolean  "ewriting"
@@ -30,10 +31,8 @@ ActiveRecord::Schema.define(version: 20161117004736) do
     t.boolean  "ahistory"
     t.boolean  "qreasoning"
     t.boolean  "flanguage"
-    t.integer  "units"
-    t.string   "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "schedules", force: :cascade do |t|
