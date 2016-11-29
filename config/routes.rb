@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get 'schedule/index', to: 'schedule#index'
 
-  get 'courses/view'
+  patch '/add', to: 'schedule#add'
 
   devise_for :users
   root to: 'home#index'
