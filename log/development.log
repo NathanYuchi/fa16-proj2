@@ -1422,6 +1422,7 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 98ms (Views: 96.1ms | ActiveRecord: 1.0ms)
 
 
+<<<<<<< HEAD
 Started GET "/" for ::1 at 2016-11-28 18:34:20 -0800
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by HomeController#index as HTML
@@ -3942,3 +3943,185 @@ DEPRECATION WARNING: You attempted to assign a value which is not explicitly `tr
   [1m[35m (0.0ms)[0m  begin transaction
   [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "courses" ("title", "units", "div", "flanguage", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Foreign Language"], ["units", 4], ["div", "lower"], ["flanguage", "t"], ["created_at", "2016-11-29 05:07:20.167339"], ["updated_at", "2016-11-29 05:07:20.167339"]]
   [1m[35m (1.3ms)[0m  commit transaction
+=======
+Started GET "/" for ::1 at 2016-11-28 19:12:07 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navigation_links.html.erb (8.7ms)
+  Rendered layouts/_navigation.html.erb (12.0ms)
+Completed 200 OK in 17624ms (Views: 17609.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-11-28 19:12:28 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-2892bebfcab2a83c3f94d02952ca949a52b2f45e126b3173b5ac9ed5e6cb9e2f.css" for ::1 at 2016-11-28 19:12:28 -0800
+
+
+Started GET "/assets/application-4ca7fbddc70e1215c50d356a927ca937e73a8ada8ef62e576f2761133c9fcc89.js" for ::1 at 2016-11-28 19:12:28 -0800
+
+
+Started GET "/" for ::1 at 2016-11-28 19:20:13 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.7ms)
+  Rendered layouts/_navigation.html.erb (4.9ms)
+Completed 200 OK in 52ms (Views: 51.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-11-28 19:23:15 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (75.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (4.0ms)
+Completed 200 OK in 136ms (Views: 114.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-11-28 19:23:17 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nIZVAC5o3/+j8iMMMB7UPMXYMh6Dd+7oq+RMJ36yhkgmUqql7CRwebdVjMA4Iz0sxpUCnsZaphLfaloCmOQ7NA==", "user"=>{"email"=>"peitian.xiong@berkeley.edu", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[35mUser Load (2.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "peitian.xiong@berkeley.edu"]]
+Completed 401 Unauthorized in 34ms (ActiveRecord: 2.5ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nIZVAC5o3/+j8iMMMB7UPMXYMh6Dd+7oq+RMJ36yhkgmUqql7CRwebdVjMA4Iz0sxpUCnsZaphLfaloCmOQ7NA==", "user"=>{"email"=>"peitian.xiong@berkeley.edu", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+Completed 200 OK in 171ms (Views: 22.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-11-28 19:23:19 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-11-28 19:23:25 -0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iDUlFrMbVNigQXvODm1QNZKa2d0ZkTYGsgxuAcwwEeUy4dqzcVf7XrTm1AIGULklkdfpXVy8fvzGgngkKmasmQ==", "user"=>{"email"=>"peitian.xiong@berkeley.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'peitian.xiong@berkeley.edu' LIMIT 1
+  [1m[36mSQL (6.0ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "peitian.xiong@berkeley.edu"], ["encrypted_password", "$2a$10$Xh215PztBzYwYniD2Lax1eaW9gu3iFuSWqhdATT3egjUv./1ntReG"], ["created_at", "2016-11-29 03:23:25.181925"], ["updated_at", "2016-11-29 03:23:25.181925"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2016-11-29 03:23:25.194817"], ["current_sign_in_at", "2016-11-29 03:23:25.194817"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2016-11-29 03:23:25.197287"], ["id", 2]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 161ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/" for ::1 at 2016-11-28 19:23:25 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  Rendered layouts/_navigation.html.erb (2.6ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2016-11-28 19:23:27 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (3.4ms)
+Completed 200 OK in 27ms (Views: 26.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-11-28 19:23:42 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_navigation_links.html.erb (2.3ms)
+  Rendered layouts/_navigation.html.erb (4.5ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-11-28 19:24:19 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (2.5ms)
+Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-11-28 19:24:35 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (5.1ms)
+Completed 200 OK in 31ms (Views: 30.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-11-28 19:25:13 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_navigation_links.html.erb (1.5ms)
+  Rendered layouts/_navigation.html.erb (3.7ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-11-28 19:25:39 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  Rendered layouts/_navigation.html.erb (2.9ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-11-28 19:25:44 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (1.9ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-11-28 19:26:12 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  Rendered layouts/_navigation.html.erb (2.6ms)
+Completed 200 OK in 6088ms (Views: 6086.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application-6dd40e4410cf4a0be82e3c782da869d5dab491bd55afc9242c4a10e11971dc23.css" for ::1 at 2016-11-28 19:26:18 -0800
+
+
+Started GET "/" for ::1 at 2016-11-28 19:26:29 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (2.4ms)
+Completed 200 OK in 5691ms (Views: 5690.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application-e1351f9be91591c09daf81a081822e4e18778c7e1a2576ec7721c6f6b56fa374.css" for ::1 at 2016-11-28 19:26:35 -0800
+
+
+Started GET "/" for ::1 at 2016-11-28 19:27:11 -0800
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_navigation_links.html.erb (1.1ms)
+  Rendered layouts/_navigation.html.erb (2.9ms)
+Completed 200 OK in 29ms (Views: 28.2ms | ActiveRecord: 0.1ms)
+>>>>>>> e2db0500dbf23df7912e80e5f4319f97e8cfe223
