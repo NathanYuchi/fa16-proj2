@@ -13,4 +13,10 @@ class ScheduleController < ApplicationController
 	  	@course.update_all(:user_id => current_user)
 	  	redirect_to schedule_view_path(:user_id => current_user)
   	end
+
+	def delete
+	  	@course = Course.where(id: params[:id])
+	  	@course.delete_all
+	  	redirect_to schedule_view_path(:user_id => current_user)
+  	end
 end
