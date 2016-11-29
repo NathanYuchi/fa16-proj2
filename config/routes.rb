@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'schedule/view'
 
-  get 'schedule/add'
+  get 'schedule/index', to: 'schedule#index'
 
   get 'courses/view'
 
