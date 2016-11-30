@@ -5,10 +5,20 @@
     src: url(../fonts/ADAM.CG PRO.otf) format("opentype");
 }
 h2.text-primary {
-    font-family: "My Custom Font", Verdana, Tahoma;
+    font-family: "My Custom Font", Arial Rounded MT Bold, Tahoma; 
+    color: black; 
+    font-size: 40px; 
+    text-align: center;
+    /*color: #fff;*/
+    /*background-color: #555;*/
+    /*display: inline;*/
+    /*line-height: 130%;*/
 }
+
+
 </style>
 <html>
+
 <h2 class = "text-primary">
 
   <% if current_user %>
@@ -16,9 +26,11 @@ h2.text-primary {
   	<br>
   	<%= button_to "View All Schedules", schedule_viewall_path, :method => "get" , :class=>"button", :style => 'background-color: #FDB515'%>
   <% else %>
-    <h2 class ="text-primary" style="color: black; text-align: center;">Please log in</h2>
+    <h2 class ="text-primary"><span>Please log in</span></h2>
   <% end %>
 
 </h2>
+
+
 
 </html>

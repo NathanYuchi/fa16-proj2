@@ -1,28 +1,53 @@
-== README
+== Ruby on Rails Decal Fall 2016 Project
+ 
+Project Title:
+UC Berkeley Computer Science
+Spring 2017 Schedule Planner
+ 
+Group members: 
+Katie Li, Peitian Xiong, Nathan Yuchi
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Demo Link: 
+https://www.youtube.com/watch?v=lGcz9GBSI_Q
+ 
+Project idea:
+Users can use our Ruby on Rails web app to discover computer science classes offered in Spring 2017 at UC Berkeley and organize their schedule accordingly. It allows the student to create, edit and delete not only CS classes, but also breath classes in their schedule. Only authenticated users have access to the web app.
+ 
+Models and Descriptions
+Course: 
+* Has the title, units, and lower/upper div
+* Courses belong to a Schedule
+ 
+Schedule:
+* Has a name and the terms for a typical 4-year student
+* Schedules have many courses and belong to a User
+ 
+User:
+* Has an account with corresponding email and password
+* User has many schedules
 
-Things you may want to cover:
+Features
+* Users can create an account and log in
+* Users can create multiple schedules
+* Schedules can be viewed for all 4 years
+* Can add/delete courses and schedules 
 
-* Ruby version
+Division of Labor
+Katie Li:
+* Created CSV file for seed data and implemented script to read from the file
+* Contributed to schedules controller for adding and editing courses
+* Contributed to schema and revising model attributes
+* Screencast
 
-* System dependencies
+Peitian Xiong:
+* Installed Bootstrap gems
+* Developed front-end features using Bootstrap
+* Contributed to views for displaying information, adding, deleting and editing classes
+* Implemented add and delete method in Schedule Controller
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Nathan Yuchi:
+* Set up devise for user authentication
+* Contributed to views to create and view schedules; created appropriate controllers for these actions
+* Contributed views to add and delete classes from schedules, created appropriate controllers for these actions
+* Wrote necessary routes 
+* Created models and their relationships
