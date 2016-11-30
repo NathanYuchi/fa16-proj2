@@ -1,20 +1,11 @@
-<h1>Schedule#add</h1>
-<p>Find me in app/views/schedule/add.html.erb</p>
+<h1>List of Classes</h1>
+   <%= simple_form_for Course.new, :url => schedule_addCourse_path,
+      html: {class: 'form-inline'} do |f| %>
+      <%= f.input :title, prompt: "Course Title", :collection => @titles %>
+      <%= f.input :term, prompt: "Semester",
+        :collection => [['Freshman Fall', 'fr1'], ['Freshman Spring', 'fr2'], ['Sophomore Fall','so2'], ['Sophomore Spring','so2'],
+        ['Junior Fall', 'ju1'], ['Junior Spring','ju2'], ['Senior Fall','se1'], ['Senior Spring', 'se2']] %>
+        <%=f.hidden_field :id, :value => @id %>
 
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Unit</th>
-		<th>Lower/Upper Div</th>
-	</tr>
-	<tr>
-	<% @courses.each do |t| %>
-       	<td><%= t.title%></td>
-       	<td><%= t.units%></td>
-       	<td><%= t.div%></td>
-    </tr>
-   <% end %>
-</table> 
-
-
- 
+      <%= f.button :submit, 'Add' %>
+    <% end %>

@@ -1,2 +1,8 @@
-<h1>Schedule#add</h1>
-<p>Find me in app/views/schedule/add.html.erb</p>
+<h1>Create New Schedule</h1>
+
+
+   <%= simple_form_for Schedule.new, :url => schedule_create_path,
+      html: {class: 'form-inline'} do |f| %>
+      <%= f.input :name, prompt: "Schedule Name" %>
+      <%= f.button :submit, 'Add' %>
+    <% end %>

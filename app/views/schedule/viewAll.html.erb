@@ -1,0 +1,23 @@
+
+<% if @schedules.length != 0 %>
+<div style="margin: 150px">
+    <table id="users" class="table table-bordered table-condensed">
+  <tr>
+    <th>Schedule Name</th>
+    <th></th>
+    <th></th>
+  </tr>
+    <% @schedules.each do |t| %>
+      <tr>
+        <td><%= t.name %></td>
+        <td><%= button_to "View Schedule", schedule_view_path(id: t), :class => "button medium", :method =>:post %></td>
+        <td><%= button_to "Delete Schedule", delete_path(id: t), :class => "button medium", :method =>:patch %></td>
+      </tr>
+    <% end %>
+</table>
+<% else %>
+<h2> Create some schedules! </h2>
+<%= button_to "Create Schedule", schedule_new_path, :method => "get" , :class=>"button"%>
+<% end %>
+
+</div>
