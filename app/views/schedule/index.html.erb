@@ -1,5 +1,5 @@
-<h1>List of Classes</h1>
-<table>
+<h1 class="index_title">List of Classes</h1>
+<table class = "index_table">
 	<tr>
 		<th>Name</th>
 		<th>Unit</th>
@@ -10,7 +10,7 @@
        	<td><%= t.title%></td>
        	<td><%= t.units%></td>
        	<td><%= t.div%></td>
-       	<td><%= button_to "Add to schedule", add_path(id: t), :class => "button medium", :method =>:patch %></td>
+       	<td><%= button_to "Add to schedule", add_path(id: t), :class => "button medium", :style => 'background-color: #FDB515', :method =>:patch %></td>
     </tr>
    <% end %>
 </table> 
