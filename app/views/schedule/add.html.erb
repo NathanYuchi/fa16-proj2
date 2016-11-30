@@ -3,7 +3,7 @@
       html: {class: 'form-inline'} do |f| %>
       <%= f.input :title, prompt: "Course Title", :collection => @titles %>
       <%= f.input :term, prompt: "Semester",
-        :collection => [['Freshman Fall', 'fr1'], ['Freshman Spring', 'fr2'], ['Sophomore Fall','so2'], ['Sophomore Spring','so2'],
+        :collection => [['Freshman Fall', 'fr1'], ['Freshman Spring', 'fr2'], ['Sophomore Fall','so1'], ['Sophomore Spring','so2'],
         ['Junior Fall', 'ju1'], ['Junior Spring','ju2'], ['Senior Fall','se1'], ['Senior Spring', 'se2']] %>
         <%=f.hidden_field :id, :value => @id %>
 
