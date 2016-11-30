@@ -14,10 +14,11 @@ h2.text-primary {
   <% if current_user %>
   	<%= button_to "Create Schedule", schedule_new_path, :method => "get" , :class=>"button"%>
   	<br>
-  	<%= button_to "View All Schedules", schedule_viewall_path, :method => "get" , :class=>"button"%>
+  	<%= button_to "View All Schedules", schedule_viewall_path, :method => "get" , :class=>"button", :style => 'background-color: #FDB515'%>
   <% else %>
     <h2 class ="text-primary" style="color: black; text-align: center;">Please log in</h2>
   <% end %>
+
 </h2>
 
 </html>

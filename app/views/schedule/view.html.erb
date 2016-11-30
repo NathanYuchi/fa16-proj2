@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 <div style="margin: 150px">
   <h1>
@@ -8,6 +9,12 @@
     <table id="users" class="table table-bordered table-condensed">
         <tr>
             <th>Title</th>
+=======
+<div class = "view">
+    <h1 class="index_title">Your Schedule</h1>
+    <table id="users" class="view_table">
+        <tr><th>Title</th>
+>>>>>>> d589b6b32761b69cd79e49e43c01d3bd5053fe86
             <th>Units</th>
             <th>Division</th>
         </tr>
@@ -17,11 +24,15 @@
             <td><%= t.title %></td>
             <td><%= t.units %></td>
             <td><%= t.div %></td>
+<<<<<<< HEAD
             <td><%= button_to "Delete Class", schedule_deleteCourse_path(title: t.title, id: @id), :class => "button medium" %></td>
+=======
+            <td><%= button_to "Delete Class", delete_path(id: t), :class => "button medium", :style => 'background-color: #FDB515', :method =>:patch %></td>
+>>>>>>> d589b6b32761b69cd79e49e43c01d3bd5053fe86
         </tr>
-        <% end %>
-
+         <% end %>
     </table>
+<<<<<<< HEAD
   <h2> Freshman Spring </h2>
     <table id="users" class="table table-bordered table-condensed">
         <tr>
@@ -148,6 +159,6 @@
         <% end %>
 
     </table>
-    <%= button_to "Back", schedule_viewall_path, :method => "get" , :class=>"button"%>
-    <%= button_to "Add Class", schedule_add_path(id: @id), :method => "patch" , :class=>"button"%>
+    <%= button_to "Back", schedule_viewall_path, :method => "get" , :class=>"button medium"%>
+    <%= button_to "Add Class", schedule_add_path(id: @id), :method => "patch" , :class=>"button medium"%>
 </div>

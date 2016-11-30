@@ -1,0 +1,22 @@
+<<<<<<< HEAD
+=======
+<h1 class="index_title">List of Classes</h1>
+<table class = "index_table">
+	<tr>
+		<th>Name</th>
+		<th>Unit</th>
+		<th>Lower/Upper Div</th>
+	</tr>
+	<tr>
+	<% @courses.each do |t| %>
+       	<td><%= t.title%></td>
+       	<td><%= t.units%></td>
+       	<td><%= t.div%></td>
+       	<td><%= button_to "Add to schedule", add_path(id: t), :class => "button medium", :style => 'background-color: #FDB515', :method =>:patch %></td>
+    </tr>
+   <% end %>
+</table> 
+
+
+ 
+>>>>>>> d589b6b32761b69cd79e49e43c01d3bd5053fe86
